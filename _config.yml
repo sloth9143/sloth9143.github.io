@@ -1,0 +1,73 @@
+# Site
+title:              SLOTH's Blog
+bio:                'Minimal Blog'
+description:        "Moon is a minimal, one column jekyll theme for your blog."
+reading_time:       true
+words_per_minute:   200
+logo:               'assets/img/logo.png'
+background:         'assets/img/placeholder-big.jpg'
+tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
+locale:             en_US
+url:                http:/sloth9143.github.io/
+
+# Jekyll
+permalink:          /:title/
+markdown:           kramdown
+highlighter:        rouge
+kramdown:
+  auto_ids:         true
+  footnote_nr:      1
+  entity_output:    as_char
+  toc_levels:       1..6
+  enable_coderay:   false
+mathjax:            true
+sass:
+  sass_dir:         _sass
+  style:            compressed
+
+# Comments
+disqus_shortname:   taylantatli
+
+# Social
+# if you don't have any of social below, comment the line.
+#google:
+  #plus:            #sloth9143
+  #analytics:
+  #verify:
+  #ad-client:
+  #ad-slot:
+#bing-verify:
+#email:
+twitter:            sloth9143
+facebook:           sloth9143
+github-url:         sloth9143
+#stackoverflow:     123456/sloth9143   from a "http://stackoverflow.com/users/123456/sloth9143" link
+#linkedin:          sloth9143
+#xing:              sloth9143
+instagram:          sloth9143
+#lastfm:            sloth9143
+#tumblr:            sloth9143
+#medium:            '@sloth9143'
+#pinterest:         sloth9143
+#foursquare:        sloth9143
+steam:              sloth9143
+#dribbble:          sloth9143
+#youtube:           sloth9143
+#youtube-channel:   channel
+#soundcloud:        sloth9143
+#weibo:             sloth9143
+#flickr:            sloth9143
+#codepen:           sloth9143
+#keybase:           sloth9143
+#xmpp:              sloth9143@server.com
+#hackernews:        sloth9143
+
+# Gems
+gems: [jekyll-mentions, jekyll-feed, jekyll-sitemap, jekyll-gist, jekyll-paginate]
+whitelist: [jekyll-mentions, jekyll-feed, jekyll-sitemap, jekyll-gist, jekyll-paginate]
+
+jekyll-mentions:
+    base_url: 
+
+# Exclude list
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
