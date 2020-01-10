@@ -1,7 +1,10 @@
 # Site navigation links
 
+- title: Projects
+  url: /projects/
+
 - title: Develop
   url: /develop/
 
-- title: Projects
-  url: /projects/
+- title: Search
+  url: /search/
