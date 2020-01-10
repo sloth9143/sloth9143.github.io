@@ -52,13 +52,14 @@ var lightJekyllSearch = {
             }
             self.suggestion(config.el, self.searchFor(e.target.value, self.posts));
         });
-
+/*
         this.innerFunctions.addEvent('click', document.querySelector('html'), function(e)
         {
             if ( document.getElementById('light-jekyll-search-suggestion') !== null ) {
                 self.disableSuggestion();
             }
         });
+*/
     },
     enableSuggestion : function()
     {
@@ -66,7 +67,7 @@ var lightJekyllSearch = {
     },
     disableSuggestion : function()
     {
-        document.getElementById('light-jekyll-search-suggestion').style.display = 'none';
+       // document.getElementById('light-jekyll-search-suggestion').style.display = 'none';
     },
     searchFor : function(toSearch, posts)
     {
