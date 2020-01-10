@@ -1,4 +1,7 @@
 # Site navigation links
 
+- title: Develop
+  url: /develop/
+
 - title: Projects
   url: /projects/
