@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "slothjspark"
-date:   2020-01-11
+date:   2016-04-06
 excerpt: "Minimal, one column Jekyll theme for your blog."
 develop: true
 tag:
@@ -11,7 +11,6 @@ tag:
 - about
 - theme
 - jspark
-- slothjspark
 comments: true
 ---
 
