@@ -27,8 +27,8 @@ sass:
   style:            compressed
 
 # Comments
-#disqus:             https://sloth9143.github.io
-disqus_shortname:   https://sloth9143.github.io
+disqus:             https://sloth9143.github.io
+disqus_shortname:   sloth9143
 
 # Social
 # if you don't have any of social below, comment the line.
