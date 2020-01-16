@@ -27,7 +27,8 @@ sass:
   style:            compressed
 
 # Comments
-disqus_shortname:   taylantatli
+disqus:             https://sloth9143.github.io
+#disqus_shortname:   https://sloth9143.github.io
 
 # Social
 # if you don't have any of social below, comment the line.
