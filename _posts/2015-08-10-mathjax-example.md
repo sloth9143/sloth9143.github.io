@@ -3,12 +3,10 @@ layout: post
 title:  "MathJax Example"
 date:   2015-08-10
 excerpt: "MathJax Example for Moon Jekyll Theme."
+posts: true
 tag:
-- markdown 
-- mathjax
 - example
-- test
-- jekyll
+feature: https://sloth9143.github.io/assets/img/back01.png
 comments: true
 ---
 
