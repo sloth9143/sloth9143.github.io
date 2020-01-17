@@ -4,6 +4,7 @@ title:  "일상 샘플 게시글"
 date:   2020-01-17
 excerpt: "테스트 블로그입니다."
 daily: true
+isShow: false
 tag:
 - blog
 - daily
