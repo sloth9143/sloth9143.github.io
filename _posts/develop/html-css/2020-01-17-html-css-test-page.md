@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Post with Image Feature"
+title: "HTML & CSS Test Page"
 date: 2012-05-23
 excerpt: "A ton of text to test readability with image feature."
-tags: [sample post, example]
-feature: http://localhost:4000/assets/img/back01.png
+html-css: true
+tags: [html-css, html-css]
+feature: https://sloth9143.github.io/assets/img/back01.png
 comments: true
 ---
 

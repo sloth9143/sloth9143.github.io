@@ -1,11 +1,10 @@
 ---
 layout: post
-title:  "MathJax Example"
-date:   2015-08-10
+title:  "Android Test Page"
+date:   2020-01-17
 excerpt: "MathJax Example for Moon Jekyll Theme."
-posts: true
-tag:
-- example
+android: true
+tag: [android, example]
 feature: https://sloth9143.github.io/assets/img/back01.png
 comments: true
 ---
