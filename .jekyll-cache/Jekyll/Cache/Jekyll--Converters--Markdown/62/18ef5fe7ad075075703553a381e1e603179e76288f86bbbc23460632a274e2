@@ -1,6 +1,9 @@
-I"r<h2 id="html-elements">HTML Elements</h2>
+I"�<p><img src="http://127.0.0.1:4000/assets/img/book/book-01.jpg" alt="Smithsonian Image" /></p>
 
-<p>Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.</p>
+<h2 id="책정보">책정보</h2>
+
+<p><strong>도서명</strong> : 아주 작은 습관의 힘(최고의 변화는 어떻게 만들어지는가)
+#<strong>저자/번역</strong> : 제임스 클리어 / 이한이</p>
 
 <h1 id="heading-1">Heading 1</h1>
 
