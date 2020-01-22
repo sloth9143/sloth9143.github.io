@@ -5,6 +5,16 @@
     <script src="{{ site.url }}/assets/js/jquery.magnific-popup.min.js"></script>
     <script src="{{ site.url }}/assets/js/jquery.fitvid.min.js"></script>
     <script src="{{ site.url }}/assets/js/scripts.js"></script>
+    <!-- snowfall -->
+    <script tyle="text/javascript" src="{{ site.url }}/assets/js/snowfall.jquery.js"></script>
+    <script tyle="text/javascript" src="{{ site.url }}/assets/js/snowfall.js"></script>
+    <script>
+        $(document).ready(function(){
+          /* $(document).snowfall(); */
+          /* $(document).snowfall({flakeCount : 250}); */
+          $(document).snowfall({image :"{{ site.url }}/assets/img/flake.png", minSize: 3, maxSize:10, flakeCount : 120});
+        });
+    </script>
     {% if site.google.analytics %}
     <!-- Asynchronous Google Analytics snippet -->
     <script>
@@ -20,3 +30,4 @@
     {% if page.comments != false %}
         {% include disqus_comments.html %}
     {% endif %}
+
