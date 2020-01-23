@@ -1,0 +1,33 @@
+I"�<h2 id="추가해야-할-파일">추가해야 할 파일</h2>
+
+<figure class="highlight"><pre><code class="language-scrt" data-lang="scrt"> - jquery.js
+ - snowfall.jquery.js
+ - snowfall.js</code></pre></figure>
+
+<ul>
+  <li>해당 js파일은 <a href="https://github.com/loktar00/JQuery-Snowfall">https://github.com/loktar00/JQuery-Snowfall</a>에서 다운로드 받을 수 있습니다.</li>
+</ul>
+
+<h2 id="소스-코드">소스 코드</h2>
+
+<figure class="highlight"><pre><code class="language-scrt" data-lang="scrt">    &lt;!-- javascript 선언 --&gt;
+    &lt;script tyle="text/javascript" src="js/jquery.js"&gt;&lt;/script&gt;
+    &lt;script tyle="text/javascript" src="js/snowfall.jquery.js"&gt;&lt;/script&gt;
+    &lt;script tyle="text/javascript" src="js/snowfall.js"&gt;&lt;/script&gt; 
+
+    &lt;script tyle="text/javascript"&gt;
+        &lt;!-- 페이지 호출 시 실행 --&gt;
+        $(document).ready(function(){
+            $(document).snowfall({
+                image :"img/flake.png", 
+                minSize: 3, 
+                maxSize:10, 
+                flakeCount : 120
+            });
+        });
+    &lt;/script&gt;</code></pre></figure>
+
+<ul>
+  <li>페이지 상단에 스크립트 선언 시 페이지에 효과가 적용됩니다.</li>
+</ul>
+:ET
