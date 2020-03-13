@@ -325,7 +325,7 @@ comments: true
  - 개인과 기업 모두 무료
  - 이클립스에서도 GIT 플러그인은 지원하지만,,,,,,, 많은 사람들이 소스트리를 더 추천하는 듯함
 
-![](http://127.0.0.1:4000/assets/img/blog/develop/sourcetree.png){: style="width:600px;"}
+![](https://sloth9143.github.io/assets/img/blog/develop/sourcetree.png){: style="width:600px;"}
 
 <br/>
 
