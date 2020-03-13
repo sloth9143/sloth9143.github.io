@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "[Github] Github을 시작하며 기본 개념 정리"
+title:  "[Github] Git/Github 기본 개념 정리"
 date:   2020-03-13
-excerpt: "github를 시작하며 기본적으로 사용되는 명령어의 의미 및 사용법 정리"
+excerpt: "Git/Github에서 기본적으로 사용되는 명령어 및 개념 설명"
 github: true
 tag:
 - git
@@ -20,17 +20,22 @@ comments: true
 <br/>
 
 ## Git
- - 오픈소스 분산형 변경이력관리시스템
+ - 컴퓨터 파일의 변경사항을 추적하고 여러 명의 사용자들 간에 해당 파일들의 작업을 조율하기 위한 **분산 버전 관리 시스템**
 
  - **작업 트리(Work Tree)**
-   - 우리가 흔히 말하는 폴더, 디렉터리를 말함
+   - 우리가 작업하고 있는 폴더, 디렉터리를 말함
  - **인덱스**
-   - 커밋을 실행하기 전의 저장소와 작업 트리 사이에 존재하는 공간
+   - 커밋을 실행하기 전의 **저장소와 작업 트리 사이에 존재하는 공간**
+   - Staging Area라고도 불림
+ - **스테이징(Staging)**
+   - 인덱스에 파일 상태를 기록하는 것
 
 <br/>
 
----
-
+## Github
+ - **Git을 호스팅해주는 웹 서비스**
+ - Git 저장소 서버를 대신 유지 및 관리해주는 서비스
+ 
 <br/>
 
 ## Git Repository (저장소)
@@ -81,13 +86,13 @@ comments: true
     <tr>
         <td>add<br/>(추가하기)</td>
         <td></td>
-        <td>git add *</td>
+        <td>git add &#60;인덱스에 등록할 파일명&#62;</td>
         <td>변경사항을 인덱스에 등록</td>
     </tr>
     <tr>
         <td rowspan="1">commit<br/>(기록하기)</td>
         <td>-m</td>
-        <td>commit -m "커밋 내용"</td>
+        <td>git commit -m "커밋 내용"</td>
         <td>
             이전 커밋 상태부터 현재 상태까지의 변경 이력이 기록된 커밋(혹은 리비전)이 생성<br/>
             '작업 트리'에 있는 변경 내용을 저장소에 바로 기록하는 것이 아니라 그 사이 공간인 '인덱스'에 파일 상태를 기록(stage - 스테이징 한다고 표현)<br/>
@@ -153,12 +158,6 @@ comments: true
         <td>git checkout &#60;브랜치명&#62;</td>
         <td>원하는 다른 브랜치로 전환 시 사용하는 명령어</td>
     </tr>
-    <tr>
-        <td>branch<br/>(전환하기)</td>
-        <td></td>
-        <td>git checkout &#60;브랜치명&#62;</td>
-        <td>원하는 다른 브랜치로 전환 시 사용하는 명령어</td>
-    </tr>
 </table>
 
 <br/>
@@ -179,8 +178,6 @@ comments: true
 
 ## 리모트(Remote) 저장소
  - 인터넷이나 네트워크 어딘가에 있는 저장소
-
-<br/>
 
 <table class="blog_tbl">
     <tr>
@@ -312,9 +309,23 @@ comments: true
 ## Collaborators
  - 프로젝트의 공동 책임자로 GitHub의 push, pull 권한을 모두 가지고 있는 사람
  - 하나의 프로젝트를 중점적으로 개발하는 개발자들은 Collaborator로 등록하여 작업하는 것이 효율적
+ - Private일때는 최대 3명까지 Collaborators을 지정해 줄 수 있다. 그 이상을 지정해 주려면 비용을 지불해야 함
 
 ## Contributor
  - 한 프로젝트의 커밋에 관여하는 모든 사람 (Pull Request가 받아들여진 사람)
+
+<br/>
+
+---
+
+<br/>
+
+## 소스트리 (SourceTree)
+ - GIT을 GUI로 사용자가 더 쉽게 사용할 수 있도록 하는 Atlassian에서 개발한 프로그램
+ - 개인과 기업 모두 무료
+ - 이클립스에서도 GIT 플러그인은 지원하지만,,,,,,, 많은 사람들이 소스트리를 더 추천하는 듯함
+
+![](http://127.0.0.1:4000/assets/img/blog/develop/sourcetree.png){: style="width:600px;"}
 
 <br/>
 
@@ -324,4 +335,5 @@ comments: true
    - [Git 브랜치의 종류 및 사용법(5가지), https://gmlwjd9405.github.io/2018/05/11/types-of-git-branch.html](https://gmlwjd9405.github.io/2018/05/11/types-of-git-branch.html)
    - [누구나 쉽게 이해할 수 있는 Git 입문, https://backlog.com/git-tutorial/kr/](https://backlog.com/git-tutorial/kr/)
    - [GitHub Collaborator 추가하기, https://hyoje420.tistory.com/41](https://hyoje420.tistory.com/41)
+
 <br/>
