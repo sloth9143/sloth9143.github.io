@@ -54,6 +54,12 @@ comments: true
         <th style="width:55%; background:#49483e; color:#f8f8f2;">설명</th>
     </tr>
     <tr>
+        <td>init<br/>(생성하기)</td>
+        <td></td>
+        <td>git init</td>
+        <td>새로운 git 저장소 생성</td>
+    </tr>
+    <tr>
         <td>pull<br/>(가져와 병합하기)</td>
         <td></td>
         <td>git pull</td>
@@ -288,7 +294,34 @@ comments: true
 
 ---
 
+<br/>
+
+## Fork
+ - 다른 사람의 Github repository에서 내가 어떤 부분을 수정하거나 추가 기능을 넣고 싶을 때 해당 respository를 내 Github repository로 그대로 복제하는 기능
+
+## Pull Request
+ - fork 및 파일 수정 후, 다른 사람의 Github repository에 변경 사항을 적용하고 싶으면 해당 저장소에 요청하는 것
+ - pull request가 original repository의 관리자로 부터 승인 되었으면 내가 만든 코드가 commit, merge되어 original 에 반영
+
+<br/>
+
+---
+
+<br/>
+
+## Collaborators
+ - 프로젝트의 공동 책임자로 GitHub의 push, pull 권한을 모두 가지고 있는 사람
+ - 하나의 프로젝트를 중점적으로 개발하는 개발자들은 Collaborator로 등록하여 작업하는 것이 효율적
+
+## Contributor
+ - 한 프로젝트의 커밋에 관여하는 모든 사람 (Pull Request가 받아들여진 사람)
+
+<br/>
+
+---
+
 #### [ reference ]
    - [Git 브랜치의 종류 및 사용법(5가지), https://gmlwjd9405.github.io/2018/05/11/types-of-git-branch.html](https://gmlwjd9405.github.io/2018/05/11/types-of-git-branch.html)
    - [누구나 쉽게 이해할 수 있는 Git 입문, https://backlog.com/git-tutorial/kr/](https://backlog.com/git-tutorial/kr/)
+   - [GitHub Collaborator 추가하기, https://hyoje420.tistory.com/41](https://hyoje420.tistory.com/41)
 <br/>
