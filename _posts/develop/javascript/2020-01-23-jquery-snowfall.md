@@ -5,7 +5,6 @@ date:   2020-01-23
 excerpt: "해당 글은 github에 있는 Snowfall이라는 jQuery 기반 플러그인을 활용하였습니다."
 javascript: true
 tag:
-- javascript
 - jQuery
 - Snowfall
 feature: https://sloth9143.github.io/assets/img/back01.png

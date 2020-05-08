@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[Linux] 자주 사용하는 Linux 명령어"
-date:   2020-01-23
+date:   2020-05-08
 excerpt: "리눅스에서 자주 사용하는 명령어 정리"
 linux: true
 tag:

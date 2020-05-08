@@ -1,6 +1,6 @@
 ---
 layout: book
-title: 독서
+title: Books
 excerpt: "A List of book"
 comments: false
 ---

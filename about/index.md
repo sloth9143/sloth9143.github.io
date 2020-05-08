@@ -1,41 +1,34 @@
 ---
 layout: page
-title: About the Theme
-tags: [about, Jekyll, theme, moon]
-date: 2016-03-21
+title: Introduce
+tags: about
+date: 2020-05-08
 comments: false
 ---
-    
-<center>
-	<a href="http://taylantatli.github.io/Moon"><b>Moon</b></a> is a minimal, one column jekyll theme.
-</center>
 
-## Features
-* Minimal, you can focus on your content
-* Responsive
-* Disqus integration
-* Syntax highlighting
-* Optional post image
-* Social icons
-* Page for sharing projects
-* Optional background image
-* Simple navigation menu
-* MathJax support
+---
 
-## Preview
+## Experience
 
-{% capture images %}
-    https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png
-    https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png
-	http://localhost:4000/favicon.ico
-	http://localhost:4000/test.png
-{% endcapture %}
-{% include gallery images=images caption="Screenshots of Moon Theme" cols=2 %}
+----- | -------------
+2018.07 ~ 재직 중 | **㈜케이지모빌리언스**
+[ 1Y 10M + α ]    | [ Java & Web 개발 ]
+                  | - 신용카드 & 계좌이체 결제창 운영 및 개발
+                  | - 카드사 및 간편결제 연동 개발
+                  | 
+2016.01 ~ 2018.04 | **㈜블루코어**
+[ 2Y 3M ]         | [ Java & Web 개발 ]
+                  | - KT 문자고객센터 서버 유지보수 및 개발
+                  | - 잇파우치 APP 내 페이지 개발
 
-See a [live version of Moon](http://taylantatli.github.io/Moon) hosted on GitHub.
+<br />
 
-## Getting Started
+--- 
 
-To learn how to install and use this theme check out the [Setup Guide](http://taylantatli.me/Moon/moon-theme/) for more information.
-      
-[Install Moon](https://github.com/TaylanTatli/Moon){: .btn}
+## Project
+
+<br />
+
+---
+
+
