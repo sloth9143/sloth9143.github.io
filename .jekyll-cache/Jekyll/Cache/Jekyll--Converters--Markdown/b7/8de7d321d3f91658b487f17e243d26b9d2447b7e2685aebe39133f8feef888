@@ -1,0 +1,148 @@
+I"b<style type="text/css">
+    .blog_tbl th, .blog_tbl tr, .blog_tbl td{border: 1px solid #e2e2e2; border-radius: 4px; font-size: 9pt; padding: 5px;}
+    .blog_tbl th{text-align: center;}
+</style>
+
+<h2 id="linux-commands-table">Linux Commands Table</h2>
+
+<table class="blog_tbl">
+    <tr>
+        <th style="width:10%; background:#49483e; color:#f8f8f2;">명령어</th>
+        <th style="width:20%; background:#49483e; color:#f8f8f2;">옵션</th>
+        <th style="width:70%; background:#49483e; color:#f8f8f2;">설명</th>
+    </tr>
+    <tr>
+        <td rowspan="14">ls</td>
+        <td colspan="2" style="text-align:center; font-weight:bold; background: #e2e2e2;">$ ls [옵션] [파일/디렉토리]</td>
+    </tr>
+    <tr>
+        <td>-R (recursive)</td>
+        <td>지정한 디렉토리 아래에 있는 하부디렉토리와 파일들을 모두 포함하여 출력<br />(하위경로와 그 안에 있는 모든 파일도 나열)</td>
+    </tr>
+    <tr>
+        <td>-d</td>
+        <td>지정 디렉토리 내에 있는 파일을 제외한 디렉토리 목록만 출력</td>
+    </tr>
+    <tr>
+        <td>-r (descending)</td>
+        <td>출력 결과 정렬. 출력결과를 정렬할 때 내림차순으로 정렬</td>
+    </tr>
+    <tr>
+        <td>-S</td>
+        <td>파일 사이즈 정렬. 파일사이즈가 가장 큰 것부터 순서대로 나열</td>
+    </tr>
+    <tr>
+        <td>-l</td>
+        <td>파일들을 나열할때 자세히 출력</td>
+    </tr>
+    <tr>
+        <td>-a (all)</td>
+        <td>경로안의 모든 파일을 나열 (숨김파일도 포함)</td>
+    </tr>
+    <tr>
+        <td>-h (humanize)</td>
+        <td>파일사이즈를 용량단위(Mb,Gb)를 붙여서 출력</td>
+    </tr>
+    <tr>
+        <td>-n</td>
+        <td>파일의 소유자와 소유그룹을 표기할때 숫자로 UID, GID로 출력</td>
+    </tr>
+    <tr>
+        <td>-U</td>
+        <td>디스크의 저장순서대로 파일을 나열</td>
+    </tr>
+    <tr>
+        <td>-i</td>
+        <td>각 파일들의 색인번호(inode)를 각 행의 맨 앞에 출력</td>
+    </tr>
+    <tr>
+        <td>-1 (숫자)</td>
+        <td>한 줄에 한 파일씩만 나열</td>
+    </tr>
+    <tr>
+        <td>-X</td>
+        <td>확장자별로 정열하여 나열</td>
+    </tr>
+    <tr>
+        <td>-F</td>
+        <td>
+            파일의 종류별로 파일의 끝에 특수문자를 표시한다.<br />
+            &nbsp; - 일반파일 : 아무표시없음<br />
+            &nbsp; - 실행파일 : *<br />
+            &nbsp; - 디렉토리 : /<br />
+            &nbsp; - 심볼릭링크 : @<br />
+            &nbsp; - FIFO파일 : |<br />
+            &nbsp; - 소켓파일 : =)<br />
+        </td>
+    </tr>
+    <tr>
+        <td>cd</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>cp</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>mv</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>pwd</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>find</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>mkdir</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>touch</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>cat</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>head</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>tail</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+<p><br /></p>
+
+<hr />
+
+<h4 id="-reference-">[ reference ]</h4>
+<ul>
+  <li><a href="http://www.incodom.kr/Linux/%EA%B8%B0%EB%B3%B8%EB%AA%85%EB%A0%B9%EC%96%B4/ls">[Linux &gt; 기본명령어 &gt; ls] http://www.incodom.kr/Linux/기본명령어/ls</a></li>
+</ul>
+:ET

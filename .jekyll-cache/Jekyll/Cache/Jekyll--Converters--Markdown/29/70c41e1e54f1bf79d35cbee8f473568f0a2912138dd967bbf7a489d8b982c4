@@ -1,0 +1,170 @@
+I"<style type="text/css">
+    .blog_tbl th, .blog_tbl tr, .blog_tbl td{border: 1px solid #e2e2e2; border-radius: 4px; font-size: 9pt; padding: 5px;}
+    .blog_tbl th{text-align: center;}
+</style>
+
+<h2 id="linux-commands-table">Linux Commands Table</h2>
+<p>-R (recursive) : 지정한 디렉토리 아래에 있는 하부디렉토리와 파일들을 모두 포함하여 출력한다.(하위경로와 그 안에 있는 모든 파일도 나열)
+-d : 지정 디렉토리 내에 있는 파일을 제외한 디렉토리 목록만 출력한다.
+-r (descending) : 출력 결과 정렬. 출력결과를 정렬할 때 내림차순으로 정렬한다.
+-S : 파일 사이즈 정렬. 파일사이즈가 가장 큰 것부터 순서대로 나열한다.
+-l : 파일들을 나열할때 자세히 출력한다.
+-a (all) : 경로안의 모든 파일을 나열한다.(숨김파일도 포함)
+-h (humanize) : 파일사이즈를 용량단위(Mb,Gb)를 붙여서 출력해 준다.
+-n : 파일의 소유자와 소유그룹을 표기할때 숫자로 UID, GID로 출력한다.
+-U : 디스크의 저장순서대로 파일을 나열한다.
+-i : 각 파일들의 색인번호(inode)를 각 행의 맨 앞에 출력한다.
+-1(숫자) : 한 줄에 한 파일씩만 나열한다.
+-X : 확장자별로 정열하여 나열한다.
+-F : 파일의 종류별로 파일의 끝에 특수문자를 표시한다.
+일반파일 : 아무표시없음
+실행파일 : *
+디렉토리: /
+심볼릭링크: @
+FIFO파일 : |
+소켓파일: =)</p>
+<table class="blog_tbl">
+    <tr>
+        <th style="width:10%; background:#49483e; color:#f8f8f2;">명령어</th>
+        <th style="width:15%; background:#49483e; color:#f8f8f2;">옵션</th>
+        <th style="width:20%; background:#49483e; color:#f8f8f2;">예시</th>
+        <th style="width:55%; background:#49483e; color:#f8f8f2;">설명</th>
+    </tr>
+    <tr>
+        <td rowspan="13">ls</td>
+        <td>-R (recursive)</td>
+        <td></td>
+        <td>지정한 디렉토리 아래에 있는 하부디렉토리와 파일들을 모두 포함하여 출력한다.(하위경로와 그 안에 있는 모든 파일도 나열)</td>
+    </tr>
+    <tr>
+        <td>-d</td>
+        <td></td>
+        <td>지정 디렉토리 내에 있는 파일을 제외한 디렉토리 목록만 출력한다.</td>
+    </tr>
+    <tr>
+        <td>-r (descending)</td>
+        <td></td>
+        <td>출력 결과 정렬. 출력결과를 정렬할 때 내림차순으로 정렬한다.</td>
+    </tr>
+    <tr>
+        <td>-S</td>
+        <td></td>
+        <td>파일 사이즈 정렬. 파일사이즈가 가장 큰 것부터 순서대로 나열한다.</td>
+    </tr>
+    <tr>
+        <td>-l</td>
+        <td></td>
+        <td>파일들을 나열할때 자세히 출력한다.</td>
+    </tr>
+    <tr>
+        <td>-a (all)</td>
+        <td></td>
+        <td>경로안의 모든 파일을 나열한다.(숨김파일도 포함)</td>
+    </tr>
+    <tr>
+        <td>-h (humanize)</td>
+        <td></td>
+        <td>파일사이즈를 용량단위(Mb,Gb)를 붙여서 출력해 준다.</td>
+    </tr>
+    <tr>
+        <td>-n</td>
+        <td></td>
+        <td>파일의 소유자와 소유그룹을 표기할때 숫자로 UID, GID로 출력한다.</td>
+    </tr>
+    <tr>
+        <td>-U</td>
+        <td></td>
+        <td>디스크의 저장순서대로 파일을 나열한다.</td>
+    </tr>
+    <tr>
+        <td>-i</td>
+        <td></td>
+        <td>각 파일들의 색인번호(inode)를 각 행의 맨 앞에 출력한다.</td>
+    </tr>
+    <tr>
+        <td>-1<br />(숫자)</td>
+        <td></td>
+        <td>한 줄에 한 파일씩만 나열한다.</td>
+    </tr>
+    <tr>
+        <td>-X</td>
+        <td></td>
+        <td>확장자별로 정열하여 나열한다.</td>
+    </tr>
+    <tr>
+        <td>-F</td>
+        <td></td>
+        <td>
+            파일의 종류별로 파일의 끝에 특수문자를 표시한다.<br />
+            일반파일 : 아무표시없음<br />
+            실행파일 : *<br />
+            디렉토리: /<br />
+            심볼릭링크: @<br />
+            FIFO파일 : |<br />
+            소켓파일: =)<br />
+        </td>
+    </tr>
+    <tr>
+        <td>cd</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>cp</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>mv</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>pwd</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>find</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>mkdir</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>touch</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>cat</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>head</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>tail</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+<p><br /></p>
+:ET

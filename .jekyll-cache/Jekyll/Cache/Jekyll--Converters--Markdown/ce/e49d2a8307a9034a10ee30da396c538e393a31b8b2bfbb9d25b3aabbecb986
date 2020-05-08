@@ -1,0 +1,84 @@
+I"�<style type="text/css">
+    .blog_tbl th, .blog_tbl tr, .blog_tbl td{border: 1px solid #e2e2e2; border-radius: 4px; font-size: 9pt; padding: 5px;}
+    .blog_tbl th{text-align: center;}
+</style>
+
+<h2 id="linux-commands-table">Linux Commands Table</h2>
+
+<table class="blog_tbl">
+    <tr>
+        <th style="width:20%; background:#49483e; color:#f8f8f2;">명령어</th>
+        <th style="width:5%; background:#49483e; color:#f8f8f2;">옵션</th>
+        <th style="width:20%; background:#49483e; color:#f8f8f2;">예시</th>
+        <th style="width:55%; background:#49483e; color:#f8f8f2;">설명</th>
+    </tr>
+    <tr>
+        <td>ls</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>cd</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>cp</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>mv</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>pwd</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>pwd</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>mkdir</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>touch</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>cat</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>head</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>tail</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+<p><br /></p>
+:ET

@@ -1,0 +1,59 @@
+I"�	<style type="text/css">
+    .blog_tbl th, .blog_tbl tr, .blog_tbl td{border: 1px solid #e2e2e2; border-radius: 4px; font-size: 9pt; padding: 5px;}
+    .blog_tbl th{text-align: center;}
+</style>
+
+<h2 id="linux-commands-table">Linux Commands Table</h2>
+
+<table class="blog_tbl">
+    <tr>
+        <th style="width:20%; background:#49483e; color:#f8f8f2;">명령어</th>
+        <th style="width:5%; background:#49483e; color:#f8f8f2;">옵션</th>
+        <th style="width:20%; background:#49483e; color:#f8f8f2;">예시</th>
+        <th style="width:55%; background:#49483e; color:#f8f8f2;">설명</th>
+    </tr>
+    <tr>
+        <td>init<br />(생성하기)</td>
+        <td></td>
+        <td>git init</td>
+        <td>새로운 git 저장소 생성</td>
+    </tr>
+    <tr>
+        <td>pull<br />(가져와 병합하기)</td>
+        <td></td>
+        <td>git pull</td>
+        <td>
+            원격 저장소에서 로컬 저장소로 업데이트<br />
+            원격 저장소에서 최신 변경 이력을 다운로드하여 내 로컬 저장소에 그 내용을 적용
+        </td>
+    </tr>
+    <tr>
+        <td>fetch<br />(가져오기)</td>
+        <td></td>
+        <td>git fetch origin</td>
+        <td>
+            원격 저장소의 내용을 확인만 하고 로컬 데이터와 병합은 하고 싶지 않은 경우 사용하는 명령어<br />
+            원격 저장소의 최신 이력을 확인, 가져온 최신 커밋 이력은 이름 없는 브랜치로 로컬에 가져옴, 'FETCH_HEAD'의 이름으로 체크아웃 가능<br />
+            fetch 명령어 후 merge 를 수행하는 것은 pull 명령어와 동일한 기능
+        </td>
+    </tr>
+    <tr>
+        <td>add<br />(추가하기)</td>
+        <td></td>
+        <td>git add &#60;인덱스에 등록할 파일명&#62;</td>
+        <td>변경사항을 인덱스에 등록</td>
+    </tr>
+    <tr>
+        <td rowspan="1">commit<br />(기록하기)</td>
+        <td>-m</td>
+        <td>git commit -m "커밋 내용"</td>
+        <td>
+            이전 커밋 상태부터 현재 상태까지의 변경 이력이 기록된 커밋(혹은 리비전)이 생성<br />
+            '작업 트리'에 있는 변경 내용을 저장소에 바로 기록하는 것이 아니라 그 사이 공간인 '인덱스'에 파일 상태를 기록(stage - 스테이징 한다고 표현)<br />
+            commit 진행 시, 내용 입력 필수
+        </td>
+    </tr>
+</table>
+
+<p><br /></p>
+:ET
