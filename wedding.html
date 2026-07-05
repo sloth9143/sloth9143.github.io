@@ -23,6 +23,7 @@
 <script type="text/javascript" src="/wedding_assets/mobile/new_m/invite/js/lightSlider.js"></script>
 <script type="text/javascript" src="/wedding_assets/mobile/new_m/invite/js/jquery.rwdImageMaps.min.js"></script>
 <script type="text/javascript" src="/wedding_assets/mobile/new_m/invite/js/common.js"></script>
+<script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.5/kakao.min.js"></script>
 </head>
 <body class="invite_29">
 	<div class="wrapper">
@@ -996,22 +997,42 @@
 	<script>
 	(function(){
 		function pageURL(){ return location.origin + location.pathname; }
+		var IMG='https://sloth9143.github.io/wedding_assets/mobile/new_m/invite/images/invite_29/visual_01.jpg';
+		try{ if(window.Kakao && !Kakao.isInitialized()){ Kakao.init('0f8ad364dc42ec73310be2b57108245b'); } }catch(e){}
 		window.shareFacebook=function(){
 			window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(pageURL()),
 				'_blank','noopener,noreferrer,width=600,height=520');
 		};
-		window.shareKakao=function(){
-			var url=pageURL();
-			if(navigator.share){
-				navigator.share({title:document.title, text:'저희 결혼식에 초대합니다.', url:url}).catch(function(){});
-				return;
-			}
+		function copyFallback(url){
 			var ta=document.createElement('textarea'); ta.value=url;
 			ta.style.position='fixed'; ta.style.left='-9999px';
 			document.body.appendChild(ta); ta.select();
 			try{ ta.setSelectionRange(0,9999); document.execCommand('copy'); }catch(e){}
 			document.body.removeChild(ta);
 			alert('청첩장 링크가 복사되었습니다. 카카오톡에 붙여넣어 공유해 주세요.');
+		}
+		window.shareKakao=function(){
+			var url=pageURL();
+			try{
+				if(window.Kakao && Kakao.isInitialized() && Kakao.Share){
+					Kakao.Share.sendDefault({
+						objectType:'feed',
+						content:{
+							title:'박종수 ♥ 김혜진 결혼합니다',
+							description:'2024. 1. 6 (토) 오후 2시 · 퍼시픽타워 20F 오펠리스 라비제홀',
+							imageUrl:IMG,
+							link:{ mobileWebUrl:url, webUrl:url }
+						},
+						buttons:[{ title:'청첩장 보기', link:{ mobileWebUrl:url, webUrl:url } }]
+					});
+					return;
+				}
+			}catch(e){}
+			if(navigator.share){
+				navigator.share({title:document.title, text:'저희 결혼식에 초대합니다.', url:url}).catch(function(){});
+				return;
+			}
+			copyFallback(url);
 		};
 	})();
 	</script>
