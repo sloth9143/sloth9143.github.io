@@ -338,7 +338,8 @@
 						</div>
 						<a href="javascript:pcAlert();" class="tel">전화걸기</a>
 					</div>
-					<div id="map_canvas" class="map" style="height:auto">
+					<div id="map_canvas" class="map" style="overflow:hidden">
+					<style>#map_canvas .root_daum_roughmap{margin:0;}#map_canvas .root_daum_roughmap .cont,#map_canvas .root_daum_roughmap .wrap_controllers{display:none !important;}</style>
 						<!-- 카카오맵 지도 퍼가기 -->
 						<div id="daumRoughmapContainer1783222919828" class="root_daum_roughmap root_daum_roughmap_landing"></div>
 						<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
@@ -999,5 +1000,26 @@
 		});
 	</script>
 
+	<script>
+	(function(){
+		var CID='daumRoughmapContainer1783222919828';
+		function fit(){
+			var box=document.getElementById('map_canvas');
+			var root=document.getElementById(CID);
+			if(!box||!root) return;
+			var wm=root.querySelector('.wrap_map')||root;
+			root.style.transformOrigin='top left';
+			root.style.transform='';
+			var natW=wm.offsetWidth, natH=wm.offsetHeight;
+			if(!natW) return false;
+			var scale=box.clientWidth/natW;
+			root.style.transform='scale('+scale+')';
+			box.style.height=Math.round(natH*scale)+'px';
+			return true;
+		}
+		var n=0, t=setInterval(function(){ if(fit()||++n>60) clearInterval(t); },200);
+		window.addEventListener('resize',fit);
+	})();
+	</script>
 </body>
 </html>
