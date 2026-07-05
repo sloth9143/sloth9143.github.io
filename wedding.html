@@ -338,8 +338,18 @@
 						</div>
 						<a href="javascript:pcAlert();" class="tel">전화걸기</a>
 					</div>
-					<div id="map_canvas" class="map">
-						<iframe src="https://maps.google.com/maps?q=%ED%8D%BC%EC%8B%9C%ED%94%BD%ED%83%80%EC%9B%8C%20%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%A4%91%EA%B5%AC%20%EC%84%B8%EC%A2%85%EB%8C%80%EB%A1%9C9%EA%B8%B8%2041&z=17&hl=ko&output=embed" width="100%" height="100%" style="border:0;" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" title="오시는 길 지도"></iframe>
+					<div id="map_canvas" class="map" style="height:auto">
+						<!-- 카카오맵 지도 퍼가기 -->
+						<div id="daumRoughmapContainer1783222919828" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+						<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+						<script charset="UTF-8">
+							new daum.roughmap.Lander({
+								"timestamp": "1783222919828",
+								"key": "qb8nm23xuog",
+								"mapWidth": "100%",
+								"mapHeight": "280"
+							}).render();
+						</script>
 					</div>
 					<div class="link">
 						<ul>
