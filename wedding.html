@@ -978,7 +978,8 @@
 			var box=document.getElementById('map_canvas');
 			var root=document.getElementById(CID);
 			if(!box||!root) return;
-			var wm=root.querySelector('.wrap_map')||root;
+			var wm=root.querySelector('.wrap_map');
+			if(!wm||!wm.offsetWidth) return false;
 			root.style.transformOrigin='top left';
 			root.style.transform='';
 			var natW=wm.offsetWidth, natH=wm.offsetHeight;
