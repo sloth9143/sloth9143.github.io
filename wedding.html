@@ -8,10 +8,10 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,target-densitydpi=medium-dpi" />
 <meta name="format-detection" content="telephone=no" />
 <meta property="og:type" content="website">
-<meta property="og:image" content=""> <!-- Link Image -->
+<meta property="og:image" content="https://sloth9143.github.io/wedding_assets/mobile/new_m/invite/images/invite_29/visual_01.jpg"> <!-- Link Image -->
 <meta property="og:title" content="박종수 ♥ 김혜진 모바일 청첩장"> <!-- Link Title -->
-<meta property="og:description" content=""> <!-- Link Text -->
-<meta property="og:url" content=""> <!-- Link URL -->
+<meta property="og:description" content="2024. 1. 6 (토) 오후 2시 · 퍼시픽타워 20F 오펠리스 라비제홀"> <!-- Link Text -->
+<meta property="og:url" content="https://sloth9143.github.io/wedding.html"> <!-- Link URL -->
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/kopubbatang.css" /> <!-- font-family: 'KoPub Batang'; -->
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/nanummyeongjo.css" /> <!-- font-family: 'Nanum Myeongjo'; -->
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" /> <!-- font-family: 'Noto Sans KR'; -->
@@ -483,12 +483,12 @@
     <div class="foot-share">
         <ul class="foot-share-list">
             <li>
-                <a href="javascript:pcAlert();" class="kakao">
+                <a href="javascript:void(0);" onclick="shareKakao()" class="kakao">
                     카카오톡<br> 공유하기
                 </a>
             </li>
             <li>
-                <a href="javascript:pcAlert();" class="facebook">
+                <a href="javascript:void(0);" onclick="shareFacebook()" class="facebook">
                     페이스북<br> 공유하기
                 </a>
             </li>
@@ -990,6 +990,28 @@
 		}
 		var n=0, t=setInterval(function(){ if(fit()||++n>60) clearInterval(t); },200);
 		window.addEventListener('resize',fit);
+	})();
+	</script>
+	<script>
+	(function(){
+		function pageURL(){ return location.origin + location.pathname; }
+		window.shareFacebook=function(){
+			window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(pageURL()),
+				'_blank','noopener,noreferrer,width=600,height=520');
+		};
+		window.shareKakao=function(){
+			var url=pageURL();
+			if(navigator.share){
+				navigator.share({title:document.title, text:'저희 결혼식에 초대합니다.', url:url}).catch(function(){});
+				return;
+			}
+			var ta=document.createElement('textarea'); ta.value=url;
+			ta.style.position='fixed'; ta.style.left='-9999px';
+			document.body.appendChild(ta); ta.select();
+			try{ ta.setSelectionRange(0,9999); document.execCommand('copy'); }catch(e){}
+			document.body.removeChild(ta);
+			alert('청첩장 링크가 복사되었습니다. 카카오톡에 붙여넣어 공유해 주세요.');
+		};
 	})();
 	</script>
 </body>
