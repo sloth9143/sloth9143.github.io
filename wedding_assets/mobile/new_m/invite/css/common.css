@@ -750,12 +750,15 @@ body{background:url("/wedding_assets/mobile/new_m/invite/images/common/bg_white.
 	position:relative;
 	padding-bottom: 56.25%; /* 16:9  padding-top: 25px;*/
 }
-.video-section .video iframe { 
-	position: absolute; 
-	top: 0; left: 0; 
-	width: 100%; 
-	height: 100%; 
+.video-section .video iframe,
+.video-section .video video {
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%;
+	height: 100%;
 	border:none;
+	object-fit: contain;
+	background:#000;
 }
 
 .livewed-section {
